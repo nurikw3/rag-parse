@@ -14,7 +14,7 @@ Built with **LangChain**, **Chroma**, **BeautifulSoup**, **FastAPI**, **Streamli
 
 - 💬 Interactive chat interface with **Streamlit**  
 - 📚 Document retrieval using **LangChain + Chroma embeddings**  
-- 🤖 Supports multiple LLM models: DeepSeek, OpenAI, K2-Think  
+- 🤖 Supports multiple LLM models: DeepSeek, OpenAI, K2-Think, Qwen, etc.. (https://ai.io.net/ai/api-keys (free api))
 - ⚡ Backend powered by **FastAPI**  
 - 🔒 Safe API key storage using **environment variables (.env)**  
 - 🐳 Fully containerized with **Docker Compose**  
