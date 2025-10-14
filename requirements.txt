@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+streamlit
+requests
+langchain
+langchain-huggingface
+langchain-chroma
+beautifulsoup4
+sentence_transformers
