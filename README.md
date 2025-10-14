@@ -1,31 +1,37 @@
 # 🧠 RAG-Parse Chat
 
-A **Retrieval-Augmented Generation (RAG) system** for answering questions based on custom documents. Built with **LangChain**, **Chroma**, **BeautifulSoup**, **FastAPI**, **Streamlit**, and **Docker Compose**.
+![Python](https://img.shields.io/badge/Python-3.10-blue?logo=python)
+![Docker](https://img.shields.io/badge/Docker-Compose-blue?logo=docker)
+![FastAPI](https://img.shields.io/badge/FastAPI-0.95-green?logo=fastapi)
+![LangChain](https://img.shields.io/badge/LangChain-0.1-purple)
+
+A **Retrieval-Augmented Generation (RAG) system** for answering questions based on custom documents.  
+Built with **LangChain**, **Chroma**, **BeautifulSoup**, **FastAPI**, **Streamlit**, and **Docker Compose**.  
 
 ---
 
-## Features
+## ✨ Features
 
-- Chat interface with Streamlit  
-- Document retrieval using LangChain + Chroma embeddings  
-- Supports multiple LLM models: DeepSeek, OpenAI, K2-Think  
-- Backend powered by FastAPI  
-- Safe API key storage using environment variables (.env)  
-- Fully containerized with Docker Compose  
+- 💬 Interactive chat interface with **Streamlit**  
+- 📚 Document retrieval using **LangChain + Chroma embeddings**  
+- 🤖 Supports multiple LLM models: DeepSeek, OpenAI, K2-Think  
+- ⚡ Backend powered by **FastAPI**  
+- 🔒 Safe API key storage using **environment variables (.env)**  
+- 🐳 Fully containerized with **Docker Compose**  
 
 ---
 
-## Screenshots
+## 🖼 Screenshots
 
-**Writing Code (show.jpg)**  
+**Writing Code (`show.jpg`)**  
 ![Code Example](show.jpg)
 
-**Frontend (app.jpg)**  
+**Frontend (`app.jpg`)**  
 ![Frontend](app.jpg)
 
 ---
 
-## Tech Stack
+## 🛠 Tech Stack
 
 - Python 3.10  
 - LangChain  
@@ -37,7 +43,7 @@ A **Retrieval-Augmented Generation (RAG) system** for answering questions based 
 
 ---
 
-## Setup
+## ⚙️ Setup
 
 1. Clone the repository:
 
@@ -46,7 +52,7 @@ git clone <your-repo-url>
 cd RAG-start
 ````
 
-2. Create `.env` file:
+2. Create a `.env` file:
 
 ```env
 LLM=your_api_token_here
@@ -60,27 +66,28 @@ LLM=your_api_token_here
 docker compose up --build
 ```
 
-* Frontend (Streamlit): [http://localhost:8501](http://localhost:8501)
-* Backend (FastAPI): [http://localhost:8000/docs](http://localhost:8000/docs)
+* 🌐 Frontend (Streamlit): [http://localhost:8501](http://localhost:8501)
+* ⚡ Backend (FastAPI): [http://localhost:8000/docs](http://localhost:8000/docs)
 
 ---
 
-## Usage
+## 📝 Usage
 
-1. Open Streamlit in your browser
+1. Open **Streamlit** in your browser
 2. Select a model from the sidebar
 3. Ask a question in the chat input
 4. The system retrieves relevant documents and generates a response using the selected LLM
 
 ---
 
-## Project Structure
+## 📂 Project Structure
 
 ```
 RAG-start/
 ├─ api.py                 # API key helper
 ├─ streamlit_app.py       # Streamlit frontend
-├─ rag_api.py             # FastAPI backend
+├─ query_rag.py           # FastAPI backend
+├─ rag_data.py            # Embeddings & Chroma vector DB
 ├─ Dockerfile.api         # Backend Dockerfile
 ├─ Dockerfile.streamlit   # Frontend Dockerfile
 ├─ docker-compose.yml     # Docker Compose setup
@@ -93,16 +100,28 @@ RAG-start/
 
 ---
 
-## Security
+## 🔐 Security
 
-* API keys are never hardcoded
+* API keys are **never hardcoded**
 * Use `.env` files and Docker environment variables
 
 ---
 
-## Notes
+## 💡 Notes
 
 * Works with multiple LLMs
 * Fully containerized
-* Designed for rapid prototyping and RAG experimentation
+* Designed for **rapid prototyping** and **RAG experimentation**
+* Easy to share and deploy for collaborators
 
+---
+
+## 🚀 Contribution
+
+Contributions are welcome! Please fork the repo, create a feature branch, and submit a pull request.
+
+---
+
+## 📫 Contact
+
+Created by **@nurikw3 (tg)** – feel free to reach out for questions or collaborations.
