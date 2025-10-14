@@ -5,7 +5,6 @@ from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_chroma import Chroma
 import requests
 import json
-import os
 from api import io
 
 
